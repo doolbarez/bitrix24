@@ -1,0 +1,27 @@
+{
+  "name": "bitrix24-chatbot-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test Bitrix24 chatbot that says good morning daily",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+  "lint": "echo 'no lint configured'",
+  "register:Webhook": "node register.js",
+  "morning": "node morning.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+  "node-cron": "^3.0.3",
+  "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
